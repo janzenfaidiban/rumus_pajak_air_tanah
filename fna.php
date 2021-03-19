@@ -6,7 +6,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h3>Perhitungan Faktor Nilai Air</h3>
+                    <h1>Perhitungan Faktor Nilai Air</h1>
                 </div>
                 <div class="card-body">
 
@@ -91,15 +91,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="bg-light text-dark text-center align-middle">
+                                <th colspan="3" class="bg-light text-dark text-center align-middle">
                                     Jumlah
-                                </td>
-                                <td class="bg-secondary text-light text-center">
-                                    <?php
-                                    $fna1 = $jml1A + $jml1B;
-                                    echo $fna1;
-                                    ?>
-                                </td>
+                                </th>
+                                <th class="text-center">
+                                    <strong>
+                                        <?php
+                                        $fna1 = $jml1A + $jml1B;
+                                        echo $fna1;
+                                        ?>
+                                    </strong>
+                                </th>
                             </tr>
                         </tbody>
                     </table>
@@ -187,15 +189,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="bg-light text-dark text-center align-middle">
+                                <th colspan="3" class="bg-light text-dark text-center align-middle">
                                     Jumlah
-                                </td>
-                                <td class="bg-secondary text-light text-center">
+                                </th>
+                                <th class="text-center">
                                     <?php
                                     $fna2 = $jml2A + $jml2B;
                                     echo $fna2;
                                     ?>
-                                </td>
+                                </th>
                             </tr>
                         </tbody>
                     </table>
@@ -285,15 +287,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="bg-light text-dark text-center align-middle">
+                                <th colspan="3" class="bg-light text-dark text-center align-middle">
                                     Jumlah
-                                </td>
-                                <td class="bg-secondary text-light text-center">
+                                </th>
+                                <th class="text-center">
                                     <?php
                                     $fna3 = $jml3A + $jml3B;
                                     echo $fna3;
                                     ?>
-                                </td>
+                                </th>
                             </tr>
                         </tbody>
                     </table>
@@ -383,15 +385,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="bg-light text-dark text-center align-middle">
+                                <th colspan="3" class="bg-light text-dark text-center align-middle">
                                     Jumlah
-                                </td>
-                                <td class="bg-secondary text-light text-center">
+                                    </tthd>
+                                <th class="text-center">
                                     <?php
                                     $fna4 = $jml4A + $jml4B;
                                     echo $fna4;
                                     ?>
-                                </td>
+                                </th>
                             </tr>
                         </tbody>
                     </table>
@@ -482,15 +484,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="bg-light text-dark text-center align-middle">
+                                <th colspan="3" class="bg-light text-dark text-center align-middle">
                                     Jumlah
-                                </td>
-                                <td class="bg-secondary text-light text-center">
+                                </th>
+                                <th class="text-center">
                                     <?php
                                     $fna5 = $jml5A + $jml5B;
                                     echo $fna5;
                                     ?>
-                                </td>
+                                </th>
                             </tr>
                         </tbody>
                     </table>

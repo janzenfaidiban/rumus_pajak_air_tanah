@@ -6,7 +6,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h3>Penagihan</h3>
+                    <h1>Penagihan</h1>
                 </div>
                 <div class="card-body">
 
@@ -52,7 +52,8 @@
                                 </td>
                                 <td class="bg-light text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $jmlPenagihan1 = $volume1 * $fna1 * $hargaBaku;
+                                    echo rupiah($jmlPenagihan1);
                                     ?>
                                 </td>
                             </tr>
@@ -89,7 +90,8 @@
                                 </td>
                                 <td class="bg-light text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $jmlPenagihan2 = $volume2 * $fna2 * $hargaBaku;
+                                    echo rupiah($jmlPenagihan2);
                                     ?>
                                 </td>
                             </tr>
@@ -126,7 +128,8 @@
                                 </td>
                                 <td class="bg-light text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $jmlPenagihan3 = $volume3 * $fna3 * $hargaBaku;
+                                    echo rupiah($jmlPenagihan3);
                                     ?>
                                 </td>
                             </tr>
@@ -166,7 +169,8 @@
                                 </td>
                                 <td class="bg-light text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $jmlPenagihan4 = $volume4 * $fna4 * $hargaBaku;
+                                    echo rupiah($jmlPenagihan4);
                                     ?>
                                 </td>
                             </tr>
@@ -208,7 +212,8 @@
                                 </td>
                                 <td class="bg-light text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $jmlPenagihan5 = $volume5 * $fna5 * $hargaBaku;
+                                    echo rupiah($jmlPenagihan5);
                                     ?>
                                 </td>
                             </tr>
@@ -241,7 +246,8 @@
                                 <td class="bg-soft-dark text-dark text-center"></td>
                                 <td class="bg-soft-dark text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $totalNPA = $jmlPenagihan1 + $jmlPenagihan2 + $jmlPenagihan3 + $jmlPenagihan4 + $jmlPenagihan5;
+                                    echo rupiah($totalNPA);
                                     ?>
                                 </td>
                             </tr>
@@ -249,10 +255,11 @@
                                 <td class="bg-soft-dark text-dark text-center align-middle" width="20%">PAJAK PABT</td>
                                 <td class="bg-soft-dark text-dark text-center"></td>
                                 <td class="bg-soft-dark text-dark text-center"></td>
-                                <td class="bg-soft-dark text-dark text-center">0.2</td>
+                                <td class="bg-soft-dark text-dark text-center"><?= $pajakPABT ?> (20%)</td>
                                 <td class="bg-soft-dark text-dark text-center">
                                     <?php
-                                    echo '-';
+                                    $totalPajakPABT = $pajakPABT * $totalNPA;
+                                    echo rupiah($totalPajakPABT);
                                     ?>
                                 </td>
                             </tr>

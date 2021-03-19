@@ -3,7 +3,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3>Tampilkan Data Usaha</h3>
+            <h1>Tampilkan Data Usaha</h1>
         </div>
         <div class="card-body">
             <ul class="list-group">
@@ -51,9 +51,9 @@
                             $nilai3 = 6.0;
                             $nilai4 = 6.5;
                             $nilai5 = 7.0;
-                        } else {
-                            $_error_jenisUsaha = '<small class="alert text-danger p-0">Jenis usaha belum dipilih</small>';
                         }
+                    } else {
+                        $_error_jenisUsaha = '<small class="alert text-danger p-0">Komponen Kompensasi belum dipilih</small>';
                     }
 
                     ?>
@@ -64,13 +64,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_komponenSDABobot)) {
-                                echo $_error_komponenSDABobot;
-                            } ?>
-
                             <input type="text" name="komponenSDA" value="<?php if (!empty($judul_jenisUsaha)) {
                                                                                 echo $judul_jenisUsaha;
                                                                             } ?>" placeholder="Jenis usaha" class="form-control">
+
+                            <?php if (!empty($_error_jenisUsaha)) {
+                                echo $_error_jenisUsaha;
+                            } ?>
                         </div>
                     </div>
 
@@ -96,11 +96,11 @@
                             $judul_komponenSDA = 'Air bawah tanah, kualitas jelek';
                             $bobot_komponenSDA = 1;
                             echo "";
-                        } else {
-                            $_error_bobot_komponenSDA = '<small class="alert text-danger p-0">Jenis usaha belum dipilih</small>';
                         }
 
                         // echo "Bobot Jenis Usaha = " . $komponenSDABobot;
+                    } else {
+                        $_error_bobot_komponenSDA = '<small class="alert text-danger p-0">Komponen Sumber Daya Alam belum dipilih</small>';
                     }
 
                     ?>
@@ -111,13 +111,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_bobot_komponenSDA)) {
-                                echo $_error_bobot_komponenSDA;
-                            } ?>
-
                             <input type="text" name="komponenSDA" value="<?php if (!empty($judul_komponenSDA)) {
                                                                                 echo $judul_komponenSDA;
                                                                             } ?>" placeholder="Bobot Komponen SDA" class="form-control">
+
+                            <?php if (!empty($_error_bobot_komponenSDA)) {
+                                echo $_error_bobot_komponenSDA;
+                            } ?>
                         </div>
                     </div>
 
@@ -144,13 +144,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_volumeAirTanah)) {
-                                echo $_error_volumeAirTanah;
-                            } ?>
-
                             <input type="text" name="volumeAirTanah" value="<?php if (!empty($volumeAirTanah)) {
                                                                                 echo $volumeAirTanah;
                                                                             } ?>" class=" form-control" placeholder="Volume air tanah">
+
+                            <?php if (!empty($_error_volumeAirTanah)) {
+                                echo $_error_volumeAirTanah;
+                            } ?>
                         </div>
                     </div>
 
@@ -172,13 +172,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_hargaBaku)) {
-                                echo $_error_hargaBaku;
-                            } ?>
-
                             <input type="text" name="volumeAirTanah" value="<?php if (!empty($hargaBaku)) {
                                                                                 echo $hargaBaku;
                                                                             } ?>" class=" form-control" placeholder="Harga baku">
+
+                            <?php if (!empty($_error_hargaBaku)) {
+                                echo $_error_hargaBaku;
+                            } ?>
                         </div>
                     </div>
 
@@ -201,13 +201,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_pajakPABT)) {
-                                echo $_error_pajakPABT;
-                            } ?>
-
                             <input type="text" name="volumeAirTanah" value="<?php if (!empty($pajakPABT)) {
                                                                                 echo $pajakPABT;
                                                                             } ?>" class=" form-control" placeholder="Pajak PABT">
+
+                            <?php if (!empty($_error_pajakPABT)) {
+                                echo $_error_pajakPABT;
+                            } ?>
                         </div>
                     </div>
 
@@ -230,13 +230,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_persentasiSDA)) {
-                                echo $_error_persentasiSDA;
-                            } ?>
-
                             <input type="text" name="volumeAirTanah" value="<?php if (!empty($persentasiSDA)) {
                                                                                 echo $persentasiSDA;
                                                                             } ?>" class=" form-control" placeholder="Pajak PABT">
+
+                            <?php if (!empty($_error_persentasiSDA)) {
+                                echo $_error_persentasiSDA;
+                            } ?>
                         </div>
                     </div>
 
@@ -259,13 +259,13 @@
                         </div>
                         <div class="col-9">
 
-                            <?php if (!empty($_error_persentasiKompensasi)) {
-                                echo $_error_persentasiKompensasi;
-                            } ?>
-
                             <input type="text" name="volumeAirTanah" value="<?php if (!empty($persentasiKompensasi)) {
                                                                                 echo $persentasiKompensasi;
                                                                             } ?>" class=" form-control" placeholder="Pajak PABT">
+
+                            <?php if (!empty($_error_persentasiKompensasi)) {
+                                echo $_error_persentasiKompensasi;
+                            } ?>
                         </div>
                     </div>
 

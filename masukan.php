@@ -5,7 +5,7 @@
     <form action="?" method="GET">
         <div class="card">
             <div class="card-header">
-                <h3>Masukan Data Usaha</h3>
+                <h1>Masukan Data Usaha</h1>
             </div>
             <div class="card-body">
                 <ul class="list-group">
@@ -35,7 +35,7 @@
                     </li>
                     <li class="list-group-item">
                         <label for="">Harga Baku (Rp)</label>
-                        <input class="form-control" type="text" class="form-group" name="hargaBaku" value="12000" readonly>
+                        <input class="form-control" type="text" class="form-group" name="hargaBaku" value="1200" readonly>
                     </li>
                     <li class="list-group-item">
                         <label for="">Pajak PABT (20%)</label>
