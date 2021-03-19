@@ -23,9 +23,13 @@
                             <tr>
                                 <td class="bg-light text-dark text-center align-middle" width="20%">Vol 0-50 M³</td>
                                 <td class="bg-light text-dark text-center">
-                                    50
+                                    volume1
                                 </td>
-                                <td class="bg-light text-dark text-center">5.8</td>
+                                <td class="bg-light text-dark text-center">
+                                    <?php
+                                    echo $fna1;
+                                    ?>
+                                </td>
                                 <td class="bg-light text-dark text-center">Rp 1,200</td>
                                 <td class="bg-light text-dark text-center">
                                     Rp 348,000 </td>
@@ -33,8 +37,13 @@
                             <tr>
                                 <td class="bg-light text-dark text-center align-middle" width="20%">Vol 51-500 M³</td>
                                 <td class="bg-light text-dark text-center">
-                                    450 </td>
-                                <td class="bg-light text-dark text-center">5.84</td>
+                                    volume2
+                                </td>
+                                <td class="bg-light text-dark text-center">
+                                    <?php
+                                    echo $fna2;
+                                    ?>
+                                </td>
                                 <td class="bg-light text-dark text-center">Rp 1,200</td>
                                 <td class="bg-light text-dark text-center">
                                     Rp 3,153,600 </td>
@@ -42,8 +51,13 @@
                             <tr>
                                 <td class="bg-light text-dark text-center align-middle" width="20%">Vol 501-1000 M³</td>
                                 <td class="bg-light text-dark text-center">
-                                    500 </td>
-                                <td class="bg-light text-dark text-center">5.88</td>
+                                    volume3
+                                </td>
+                                <td class="bg-light text-dark text-center">
+                                    <?php
+                                    echo $fna3;
+                                    ?>
+                                </td>
                                 <td class="bg-light text-dark text-center">Rp 1,200</td>
                                 <td class="bg-light text-dark text-center">
                                     Rp 3,528,000 </td>
@@ -52,8 +66,13 @@
                             <tr>
                                 <td class="bg-light text-dark text-center align-middle" width="20%">Vol 1001-2500 M³</td>
                                 <td class="bg-light text-dark text-center">
-                                    1500 </td>
-                                <td class="bg-light text-dark text-center">5.92</td>
+                                    volume4
+                                </td>
+                                <td class="bg-light text-dark text-center">
+                                    <?php
+                                    echo $fna4;
+                                    ?>
+                                </td>
                                 <td class="bg-light text-dark text-center">Rp 1,200</td>
                                 <td class="bg-light text-dark text-center">
                                     Rp 10,656,000 </td>
@@ -64,8 +83,13 @@
                             <tr>
                                 <td class="bg-light text-dark text-center align-middle" width="20%">Vol &gt;2500 M³</td>
                                 <td class="bg-light text-dark text-center">
-                                    500 </td>
-                                <td class="bg-light text-dark text-center">5.96</td>
+                                    volume5
+                                </td>
+                                <td class="bg-light text-dark text-center">
+                                    <?php
+                                    echo $fna5;
+                                    ?>
+                                </td>
                                 <td class="bg-light text-dark text-center">Rp 1,200</td>
                                 <td class="bg-light text-dark text-center">
                                     Rp 3,576,000 </td>
@@ -75,7 +99,8 @@
                             <tr>
                                 <td class="bg-soft-dark text-dark text-center align-middle" width="20%"></td>
                                 <td class="bg-soft-dark text-dark text-center">
-                                    3000 </td>
+                                    volume total
+                                </td>
                                 <td class="bg-soft-dark text-dark text-center"></td>
                                 <td class="bg-soft-dark text-dark text-center"></td>
                                 <td class="bg-soft-dark text-dark text-center"></td>

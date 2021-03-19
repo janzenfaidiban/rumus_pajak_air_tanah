@@ -10,7 +10,7 @@
             <div class="card-body">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <label for="">Jenis Usaha</label>
+                        <label for="">Jenis Usaha (Komponen Kompensasi)</label>
                         <select class="form-select" aria-label="Default select example" name="jenisUsaha">
                             <option selected></option>
                             <option value="1">Non Niaga</option>
@@ -40,6 +40,14 @@
                     <li class="list-group-item">
                         <label for="">Pajak PABT (20%)</label>
                         <input class="form-control" type="text" class="form-group" name="pajakPABT" value="0.2" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="">Persentasi SDA</label>
+                        <input class="form-control" type="text" class="form-group" name="persentasiSDA" value="0.6" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="">Persentasi Kompensasi</label>
+                        <input class="form-control" type="text" class="form-group" name="persentasiKompensasi" value="0.4" readonly>
                     </li>
                     <li class="list-group-item">
                         <input type="submit" value="Hitung" class="btn btn-lg btn-dark">

@@ -60,7 +60,7 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <label for="">Jenis Usaha</label>
+                            <label for="">Jenis Usaha (Komponen Kompensasi)</label>
                         </div>
                         <div class="col-9">
 
@@ -212,6 +212,65 @@
                     </div>
 
                 </li>
+
+                <li class="list-group-item">
+
+                    <?php
+                    // data persentasi SDA
+                    if (isset($_GET['persentasiSDA']) && $_GET['persentasiSDA'] != '') {
+                        $persentasiSDA = $_GET['persentasiSDA']; // ambil persentasi SDA
+                    } else {
+                        $_error_persentasiSDA = '<small class="alert text-danger p-0">Persentasi SDA belum dimasukan</small>';
+                    }
+                    ?>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="">Persentasi SDA</label>
+                        </div>
+                        <div class="col-9">
+
+                            <?php if (!empty($_error_persentasiSDA)) {
+                                echo $_error_persentasiSDA;
+                            } ?>
+
+                            <input type="text" name="volumeAirTanah" value="<?php if (!empty($persentasiSDA)) {
+                                                                                echo $persentasiSDA;
+                                                                            } ?>" class=" form-control" placeholder="Pajak PABT">
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="list-group-item">
+
+                    <?php
+                    // data persentasi SDA
+                    if (isset($_GET['persentasiKompensasi']) && $_GET['persentasiKompensasi'] != '') {
+                        $persentasiKompensasi = $_GET['persentasiKompensasi']; // ambil persentasi SDA
+                    } else {
+                        $_error_persentasiKompensasi = '<small class="alert text-danger p-0">Persentasi Kompenasi belum dimasukan</small>';
+                    }
+                    ?>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="">Persentasi Kompensasi</label>
+                        </div>
+                        <div class="col-9">
+
+                            <?php if (!empty($_error_persentasiKompensasi)) {
+                                echo $_error_persentasiKompensasi;
+                            } ?>
+
+                            <input type="text" name="volumeAirTanah" value="<?php if (!empty($persentasiKompensasi)) {
+                                                                                echo $persentasiKompensasi;
+                                                                            } ?>" class=" form-control" placeholder="Pajak PABT">
+                        </div>
+                    </div>
+
+                </li>
+
             </ul>
         </div>
     </div>
